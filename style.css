@@ -1,0 +1,50 @@
+
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border: 3px solid rgb(148, 145, 145);
+    padding: 20px;
+}
+
+.button-container {
+    text-align: center; /* Center-align contents */
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.signinbtn, .signupbtn {
+    background-color: rgb(43, 107, 247);
+    color: white;
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.signinbtn:hover, .signupbtn:hover {
+    background-color: rgb(30, 77, 177); /* Change background color on hover */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Take up the available width minus padding */
+    margin-bottom: 10px;
+}
+
+.signupbtn.filled {
+    background-color: green;
+}
